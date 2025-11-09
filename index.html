@@ -792,6 +792,29 @@
       z-index: 9999;
       transition: width 0.1s ease;
     }
+
+    .section-titles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  color: #1f2937; /* dark gray text */
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.section-titles .icon {
+  width: 28px;
+  height: 28px;
+  stroke: #7c3aed; /* purple */
+  transition: transform 0.3s ease, stroke 0.3s ease;
+}
+
+.section-titles:hover .icon {
+  transform: rotate(12deg) scale(1.1);
+  stroke: #5b21b6; /* darker purple on hover */
+}
+
   </style>
 </head>
 
@@ -871,14 +894,20 @@
       <section id="about" class="about-section">
         <h2>About Me</h2>
         <p class="about-intro">
-          Hi! I'm <strong>Amanda Chathurangani Perera</strong>, a passionate <strong>Software Engineer</strong> who
+          Hi I'm <strong>Amanda Chathurangani Perera</strong>, a passionate <strong>Software Engineer</strong> who
           loves creating beautiful, responsive, and user-friendly web experiences. I specialize in both front-end and
           back-end development, bringing ideas to life through clean code and creative design.
         </p>
 
         <div class="about-details">
           <div class="about-card">
-            <h3>🎯 My Mission</h3>
+          <h3 class="section-titles">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+  My Mission
+</h3>
             <p>
               To build innovative, high-performance digital solutions that make everyday life easier and more enjoyable
               for users around the world.
@@ -886,7 +915,13 @@
           </div>
 
           <div class="about-card">
-            <h3>⚙️ My Skills</h3>
+          <h3 class="section-titles">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M10.325 4.317a1 1 0 011.35-.94l1.675.558a1 1 0 00.949-.217l1.262-1.261a1 1 0 011.414 0l2.121 2.122a1 1 0 010 1.414l-1.26 1.26a1 1 0 00-.218.95l.559 1.674a1 1 0 01-.94 1.35l-1.845.308a7.001 7.001 0 01-3.584 3.584l-.308 1.845a1 1 0 01-1.35.94l-1.674-.559a1 1 0 00-.95.218l-1.26 1.26a1 1 0 01-1.414 0l-2.122-2.121a1 1 0 010-1.414l1.261-1.262a1 1 0 00.217-.949l-.558-1.675a1 1 0 01.94-1.35l1.845-.308a7.001 7.001 0 013.584-3.584l.308-1.845z" />
+  </svg>
+  My Skills
+</h3>
             <ul>
               <li>HTML, CSS, JavaScript, PHP</li>
               <li>React, Node.js, Bootstrap, Tailwind CSS</li>
